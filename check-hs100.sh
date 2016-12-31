@@ -3,7 +3,7 @@
 # Usage:
 # Intended to be used as a cron job with flock, which is a core Linux utility.
 # I use it with the following, which will run every minute of every day:
-# * * * * * flock -n /tmp/check.lock /path/to/check.sh
+# * * * * * flock -n /tmp/check-hs100.lock /path/to/check-hs100.sh
 
 # This will find the first five hops, find rows that have IPs, take anything
 # from hop 2 to 9 (eg - past my router and modem) then grab the IP address of the
